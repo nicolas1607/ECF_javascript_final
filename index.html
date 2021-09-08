@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HearStar</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/helpers.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+    <div class="overlap" hidden>
+        <div id="modal">
+        </div>
+    </div>
+
+    <header>
+
+        <nav class="navbar navbar-light">
+            <a href="index.html" class="navbar-content">
+                <img class="navbar-img" src="img/noun_Ear_1429588.svg">
+                <p class="navbar-title">HearStar</p>
+            </a>
+        </nav>
+
+    </header>
+
+    <main>
+
+        <div class="search container">
+
+            <input id="search-input" class="search-input" name="search-input" aria-label="Saisie" placeholder="Artist / Album / Title" required>
+
+            <select id="search-select" class="search-select" name="search-select">
+                <option value="everything">Everything</option>
+                <option value="artist">Artist</option>
+                <option value="album">Album</option>
+                <option value="title">Title</option>
+            </select>
+
+            <button id="search-button" class="search-button btn btn-primary">Search</button>
+
+        </div>
+
+        <div class="res container">
+
+            <p id="total"></p>
+
+            <hr>
+
+            <table id="res-table" class="table table-striped table-hover">
+
+                <thead id="res-head">
+                    <tr>
+                        <th class="id">#</th>
+                        <th class="artist">Artist</th>
+                        <th class="title">Title</th>
+                        <th class="album">Album</th>
+                        <th class="action">Action</th>
+                    </tr>
+                </thead>
+
+                <tbody id="res-body"></tbody>
+                    <tr id="res-info">
+                        <th>Veuillez saisir une nouvelle recherche... Please !</th>
+                    </tr>
+                <tfoot id="res-foot"></tfoot>
+
+            </table>
+
+            <div class="spinner spinner-border text-primary" role="status">
+                <span class="sr-only"></span>
+            </div>
+
+        </div>
+
+    </main>
+
+    <footer>
+
+    </footer>
+
+    <script src="js/dom.js"></script>
+    <script src="js/search.js"></script>
+
+</body>
+</html>

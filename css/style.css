@@ -1,0 +1,203 @@
+:root{
+    --color: #354766;
+}
+
+.container{
+    padding-left: 16rem;
+    padding-right: 16rem;
+}
+
+a{
+    cursor: pointer;
+    text-decoration: none;
+    color: white;
+}
+
+td{
+    word-break: break-word;
+}
+
+h1{
+    font-weight: 900;
+}
+
+h2{
+    font-weight: 600;
+}
+
+/* Typographie */
+body{
+    font-family: Raleway, sans-serif;
+    font-size: 1.6rem;
+}
+
+/* Fenêtre modal */
+.overlap {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(0, 0, 0, 0.4);
+    overflow: scroll;
+}
+
+.overlap[hidden] {
+    display: none;
+}
+
+#modal {
+    overflow: scroll;
+    position: absolute;
+    top: 15%;
+    bottom: 15%;
+    width: 115.2rem;
+    background-color: var(--color);
+    opacity: 1;
+    color: white;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+}
+
+
+#modalName{
+    position: fixed;
+    width: 80%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: white;
+    color: var(--color);
+    font-weight: 800;
+    padding: 1rem 3rem;
+}
+
+#modalButton{
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    border: transparent;
+    background-color: white;
+    font-weight: bold;
+    color: var(--color);
+    padding: 1rem 2rem;
+    margin-left: 2rem;
+}
+
+#modalInfo p{
+    width: 60%;
+}
+
+#modalContent, #modalCoverArt{
+    padding: 3rem;
+}
+
+#modalContent p{
+    margin: 1rem 2rem;
+}
+
+#modalContent h2{
+    margin-bottom: 2rem;
+}
+
+#modalhr{
+    width: 90%;
+    margin: auto;
+}
+
+#modalCover{
+    display: grid;
+    grid-template-columns: 30% 30% 30%;
+    gap: 5%;
+    margin: 5rem 0;
+}
+
+#modal-cover-no-result{
+    text-align: center;
+    margin: auto;
+    border: solid 1px white;
+    padding: 15rem 12rem;
+}
+
+.imgContent{
+    border: solid 1px white;
+}
+
+
+/* Navbar */
+.navbar{
+    background-color: var(--color);
+    color: white;
+}
+
+.navbar-content{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0 8rem;
+}
+
+.navbar-img{
+    margin-top: 1rem;
+    width: 4rem;
+    transform: rotateY(3.142rad);
+}
+
+.navbar-title{
+    font-size: 2.4rem;
+    font-weight: 600;
+}
+
+
+/* Search */
+.search{
+    margin: auto;
+    display: grid;
+    grid-template-columns: 70% 20% 10%;
+    gap: 2rem;
+    margin: 5rem;
+}
+
+.search-button{
+    font-size: 1.6rem;
+    font-weight: 600;
+}
+
+
+/* Table */
+#total{
+    text-align: right;
+}
+
+.spinner{
+    visibility: hidden;
+    display: flex;
+    margin: auto;
+    margin-top: 5rem;
+    margin-bottom: 10rem;
+}
+
+.action{
+    width: 10rem;
+}
+
+.action-button img{
+    width: 2rem;
+}
+
+#res-info{
+    text-align: center;
+}
+
+#res-head tr,
+#res-body tr{
+    display: grid;
+    grid-template-columns: 5% 20% 30% 35% 10%;
+}
+
+#res-foot{
+    text-align: center;
+}
