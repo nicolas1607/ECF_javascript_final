@@ -52,8 +52,11 @@ function search(){
                                 }
                             }
                     }
-                    else album = record.releases[0]['release-group'].title;
-                    if (record.releases.length > 1) album += " / ...";
+                    else if (record.releases) album = record.releases[0]['release-group'].title;
+                    else {
+                        album = record.title;
+                    }
+                    if (record.releases && record.releases.length > 1) album += " / ...";
                     fullAlbum = "";
                     if (record.releases != null){
                         if (record.releases.length == 1){
